@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Bogam;
+  src: url("../fonts/Bogam.ttf");
+}
+
+@font-face {
+  font-family: PP Neue Montreal;
+  src: url("../fonts/NeueMontreal-Bold.ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: PP Neue Montreal;
+  src: url("../fonts/NeueMontreal-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: PP Neue Montreal;
+  src: url("../fonts/NeueMontreal-Regular.ttf");
+  font-weight: 100;
+}
+
+:root {
+  --XDyellow: #e3ff6f;
+  --XDgreen: #71ff95;
+  --XDblue: #2d51ff;
+  --XDpurple: #a07eff;
+  --XDpink: #ff41fe;
+  --XDorange: #ff6728;
+  --XDblack: #0f0f0f;
+  --XDmuted: #292828;
+  --XDdarkGray: #787878;
+  --XDgray: #dedad7;
+  --XDwhite: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
