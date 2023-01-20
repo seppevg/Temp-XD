@@ -392,3 +392,83 @@ footer {
     margin-right: 2rem;
   }
 }
+
+/* BREAKPOINT 3*/
+@media only screen and (min-width: 1240px) {
+  /* Hero section */
+  #hero {
+    margin: 0 4rem;
+  }
+
+  h1 {
+    font-size: 9rem;
+  }
+
+  /* Manifesto section  */
+  #manifesto {
+    padding: 6rem 4rem;
+  }
+
+  #manifesto .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 0px;
+    position: relative;
+  }
+
+  .box {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .box p {
+    margin-bottom: 0;
+  }
+
+  #manifesto .underline {
+    grid-area: 1 / 3 / 2 / 4;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: 0;
+  }
+
+  /* Showcase section */
+  #showcase {
+    margin: 4rem 4rem;
+  }
+
+  /* CTA section */
+  #cta {
+    margin: 4rem 4rem;
+  }
+
+  #cta .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 0px;
+    position: relative;
+  }
+
+  #cta .button {
+    height: fit-content;
+    margin-top: 0;
+  }
+
+  /* footer */
+  footer {
+    padding: 6rem 4rem;
+  }
+
+  .footer-links .footer-container {
+    margin-right: 6rem;
+  }
+}
+
+/* BREAKPOINT 4*/
+@media only screen and (min-width: 1440px) {
+  /* Vanaf 1440 dp moeten de margins groeien, content blijft dezelfde grootte */
+}
