@@ -3,8 +3,12 @@ AOS.init();
 function logoChange() {
     if (window.innerWidth <= 600) {
         document.getElementById("logo").innerHTML = "XD";
-    } else {
+    } 
+    else {
         document.getElementById("logo").innerHTML = "Digital Experience Design";
+        document.getElementById("menu-overlay").style.display = "none";
+        document.body.style.overflow = "auto";
+        document.getElementById("menu").innerHTML = "Menu";
     }
 }
 window.onresize = function () {
@@ -40,5 +44,18 @@ document.getElementById("cta-button").addEventListener("mouseout", function () {
     document.getElementById("cta-button").style.backgroundColor = "transparent";
     document.getElementById("cta-button").style.border = "1px solid white";
     document.getElementById("cta-button").style.color = "white";
+});
+
+document.getElementById("menu").addEventListener("click", function () {
+    if (document.getElementById("menu").innerHTML == "Menu") {
+        document.getElementById("menu").innerHTML = "Close";
+        document.getElementById("menu-overlay").style.display = "block";
+        document.body.style.overflow = "hidden";
+    }
+    else {
+        document.getElementById("menu").innerHTML = "Menu";
+        document.getElementById("menu-overlay").style.display = "none";
+        document.body.style.overflow = "auto";
+    }  
 });
 
