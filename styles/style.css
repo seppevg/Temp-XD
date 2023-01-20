@@ -331,6 +331,14 @@ footer {
   .footer-links .footer-container:first-child h3 {
     margin: 0 0 0.5rem 0;
   }
+
+  .footer-full {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 /* BREAKPOINT 2*/
@@ -470,5 +478,35 @@ footer {
 
 /* BREAKPOINT 4*/
 @media only screen and (min-width: 1440px) {
-  /* Vanaf 1440 dp moeten de margins groeien, content blijft dezelfde grootte */
+  /* Hero section */
+  #hero {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  /* Manifesto section  */
+  #manifesto .container,
+  #manifesto .title {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  /* Showcase section */
+  #showcase {
+    max-width: 1440px;
+    margin: 4rem auto;
+  }
+
+  /* CTA section */
+  #cta {
+    max-width: 1440px;
+    margin: 4rem auto;
+  }
+
+  /* footer */
+  .footer-full {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
