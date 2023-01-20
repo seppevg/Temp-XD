@@ -1,10 +1,17 @@
 AOS.init();
-window.onresize = function () {
+
+function logoChange() {
     if (window.innerWidth <= 600) {
         document.getElementById("logo").innerHTML = "XD";
     } else {
         document.getElementById("logo").innerHTML = "Digital Experience Design";
     }
+}
+window.onresize = function () {
+    logoChange();
+}
+window.onload = function () {
+    logoChange();
 }
 
 let color = ["#71ff95", "#e3ff6f", "#a07eff", "#ff41fe", "#ff6728"];

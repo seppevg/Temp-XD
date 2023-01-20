@@ -1,8 +1,7 @@
 @font-face {
   font-family: Bogam;
-  src: url("../assets/fonts/Bogam.otf");
+  src: url("../assets/fonts/Bogam.ttf");
 }
-
 @font-face {
   font-family: PP Neue Montreal;
   src: url("../assets/fonts/NeueMontreal-Bold.otf");
@@ -67,6 +66,7 @@ nav {
 
 #logo {
   font-family: "Bogam", serif;
+  font-weight: 100;
   font-size: 4rem;
   color: white;
   text-transform: uppercase;
@@ -119,6 +119,7 @@ nav ul li a {
 
 h1 {
   font-family: "Bogam", serif;
+  font-weight: 100;
   font-size: 4rem;
   text-transform: uppercase;
   color: var(--XDwhite);
