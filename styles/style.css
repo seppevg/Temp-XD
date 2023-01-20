@@ -64,6 +64,7 @@ h1 {
   color: var(--XDwhite);
   font-size: 1rem;
   padding: 4rem 1rem;
+  margin-top: 4rem;
 }
 
 .title {
@@ -85,7 +86,8 @@ h1 {
 }
 
 #manifesto .container a {
-  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   color: var(--XDwhite);
   text-decoration: none;
@@ -144,7 +146,8 @@ h1 {
   background-image: url(../assets/projects/small/poster-her.webp);
 }
 .project-6 {
-  background-image: url(../assets/projects/small/poster-wes-anderson.webm);
+  width: 100%;
+  height: fit-content;
 }
 .project-7 {
   background-image: url(../assets/projects/small/troubadour.webp);
@@ -165,7 +168,7 @@ h1 {
   background-image: url(../assets/projects/small/portfolio-astra.webm);
 }
 
-#showcase .project .project-button {
+#showcase .project-button {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -224,4 +227,8 @@ footer {
 
 .footer-links ul p {
   margin: 0;
+}
+
+.footer-links ul a {
+  color: var(--XDblack);
 }
