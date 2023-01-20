@@ -1,113 +1,113 @@
 @font-face {
-    font-family: PP Neue Montreal;
-    src: url("../assets/fonts/NeueMontreal-Medium.otf");
-    font-weight: 500;
+  font-family: PP Neue Montreal;
+  src: url("../assets/fonts/NeueMontreal-Medium.otf");
+  font-weight: 500;
 }
 
 h1 {
-    text-align: center;
-    font-size: 12rem;
+  text-align: center;
+  font-size: 12rem;
 }
 
 h2 {
-    text-align: center;
-    font-family: "PP Neue Montreal", sans-serif;
-    font-weight: 100;
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    padding: 1rem 1rem;
+  text-align: center;
+  font-family: "PP Neue Montreal", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  padding: 1rem 1rem;
 }
 #hero {
-    padding-top: 3rem;
-    padding-bottom: 0rem;
+  padding-top: 3rem;
+  padding-bottom: 0rem;
 }
 
 #manifesto {
-    background-color: transparent;
-    font-size: 1rem;
-    padding: 0rem 0rem;
-    margin-bottom: 0rem;
-    display: flex;
-    flex-direction: column;
-    color: white;
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 0rem 0rem;
+  margin-bottom: 0rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 
 #manifesto p {
-    text-align: center;
-    padding: 0.5rem;
+  text-align: center;
+  padding: 0.5rem;
 }
 
 #manifesto div {
-    padding: 3rem;
+  padding: 3rem;
 }
 
 #manifesto div:nth-child(1) {
-    background-color: #FF6728;
-    color: black;
+  background-color: #ff6728;
+  color: black;
 }
 
 #manifesto div:nth-child(7) {
-    background-color: #E3FF6F;
-    color: black;
+  background-color: #e3ff6f;
+  color: black;
 }
 
 #manifesto div:nth-child(10) {
-    background-color: #A07EFF;
-    color: black;
+  background-color: #a07eff;
+  color: black;
 }
 
 #manifesto div:nth-child(15) {
-    background-color: #FF41FE;
-    color: black;
+  background-color: #ff41fe;
+  color: black;
 }
 
 @media screen and (max-width: 1439px) {
-    #logo {
-        font-size: 4rem;
-    }
+  #logo {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (max-width: 1239px) {
-    #logo {
-        font-size: 3rem;
-    }
-    h1 {
-        font-size: 10rem;
-    }
+  #logo {
+    font-size: 3rem;
+  }
+  h1 {
+    font-size: 10rem;
+  }
 }
 
 @media screen and (max-width: 1066px) {
-    #logo {
-        font-size: 2rem;
-    }
+  #logo {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 904px) {
-    nav {
-        display: none;
-    }
-    #menu {
-        display: block;
-    }
-    h1 {
-        font-size: 6rem;
-    }
+  nav {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  h1 {
+    font-size: 6rem;
+  }
 }
 
 @media screen and (max-width: 660px) {
-    #manifesto div {
-        padding: 2rem;
-    }
+  #manifesto div {
+    padding: 2rem;
+  }
 
-    h1 {
-        font-size: 4rem;
-    }
+  h1 {
+    font-size: 4rem;
+  }
 
-    h2 {
-        font-size: 1.4rem;
-    }
+  h2 {
+    font-size: 1.4rem;
+  }
 
-    #manifesto p {
-        font-size: 0.8rem;
-    }
+  #manifesto p {
+    font-size: 0.8rem;
+  }
 }
