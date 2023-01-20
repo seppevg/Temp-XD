@@ -38,3 +38,27 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  background-color: var(--XDblack);
+}
+
+/* Hero section */
+#hero {
+  margin: 0 1rem;
+}
+
+h1 {
+  font-family: "Bogam", serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--XDwhite);
+}
+
+/* Manifesto section  */
+#manifesto {
+  background-color: var(--XDblue);
+  color: var(--XDwhite);
+  font-family: "PP Neue Montreal", sans-serif;
+  font-size: 1rem;
+}
