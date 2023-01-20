@@ -22,3 +22,16 @@ document.getElementById("contact").addEventListener("mouseout", function () {
     document.getElementById("contact").style.color = "white";
 });
 
+document.getElementById("cta-button").addEventListener("mouseover", function () {
+    let colorChoice = color[Math.floor(Math.random() * color.length)];
+    document.getElementById("cta-button").style.backgroundColor = colorChoice;
+    document.getElementById("cta-button").style.border = "1px solid " + colorChoice;
+    document.getElementById("cta-button").style.color = "black";
+});
+
+document.getElementById("cta-button").addEventListener("mouseout", function () {
+    document.getElementById("cta-button").style.backgroundColor = "transparent";
+    document.getElementById("cta-button").style.border = "1px solid white";
+    document.getElementById("cta-button").style.color = "white";
+});
+

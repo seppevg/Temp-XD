@@ -17,60 +17,6 @@ h2 {
     font-size: 1.8rem;
     padding: 1rem 1rem;
 }
-
-header {
-    background-color: #0F0F0F;
-    padding: 1rem 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#logo {
-    font-family: "Bogam", serif;
-    font-size: 4rem;
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin-left: 2rem;
-    text-transform: uppercase;
-    font-family: "PP Neue Montreal", sans-serif;
-    font-weight: 100;
-    font-size: 1.2rem;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-#contact {
-    border: 1px solid white;
-    padding: 1rem 2rem;
-    border-radius: 5rem;
-    transition: all 0.3s ease-in-out;
-}
-
-#menu {
-    display: none;
-    border: 1px solid white;
-    padding: 1rem 2rem;
-    border-radius: 5rem;
-    text-decoration: none;
-    color: white;
-    font-family: "PP Neue Montreal", sans-serif;
-    font-weight: 100;
-    font-size: 1.2rem;
-}
-
 #hero {
     padding-top: 3rem;
     padding-bottom: 0rem;

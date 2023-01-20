@@ -46,6 +46,72 @@ body {
   font-weight: 100;
 }
 
+header {
+  background-color: #0F0F0F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0px auto;
+  padding: 2em 1.5em;
+}
+#logo {
+  font-size: 2.5em;
+}
+nav {
+  display: none;
+}
+#menu {
+  display: block;
+}
+
+#logo {
+  font-family: "Bogam", serif;
+  font-size: 4rem;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 2rem;
+  text-transform: uppercase;
+  font-family: "PP Neue Montreal", sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#contact {
+  border: 1px solid white;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  transition: all 0.3s ease-in-out;
+}
+#cta-button {
+  transition: all 0.3s ease-in-out;
+}
+
+#menu {
+  border: 1px solid white;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  text-decoration: none;
+  color: white;
+  font-family: "PP Neue Montreal", sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
 /* Hero section */
 #hero {
   margin: 0 1rem;
@@ -130,11 +196,13 @@ h1 {
 }
 
 .project-square {
-  padding-top: 100%; /* 1:1 Aspect Ratio */
+  padding-top: 100%;
+  /* 1:1 Aspect Ratio */
 }
 
 .project-vertical {
-  padding-top: 141.4%; /* 16:9 Aspect Ratio (divide 16 by 9 = 1,777...) */
+  padding-top: 141.4%;
+  /* 16:9 Aspect Ratio (divide 16 by 9 = 1,777...) */
 }
 
 .project-1 {
@@ -144,15 +212,19 @@ h1 {
 .project-2 {
   background-image: url(../assets/projects/small/kwetter.webp);
 }
+
 .project-3 {
   background-image: url(../assets/projects/small/buurtparlement-magazine.webp);
 }
+
 .project-4 {
   background-image: url(../assets/projects/small/poster-wier.webp);
 }
+
 .project-5 {
   background-image: url(../assets/projects/small/poster-her.webp);
 }
+
 .project-6 {
   padding-top: 0;
   width: 100%;
@@ -162,22 +234,27 @@ h1 {
 .project-7 {
   background-image: url(../assets/projects/small/troubadour.webp);
 }
+
 .project-8 {
   padding-top: 0;
   width: 100%;
   height: fit-content;
 }
+
 .project-9 {
   background-image: url(../assets/projects/small/buurtparlement-logo.webp);
 }
+
 .project-10 {
   background-image: url(../assets/projects/small/localleaves.webp);
 }
+
 .project-11 {
   padding-top: 0;
   width: 100%;
   height: fit-content;
 }
+
 .project-12 {
   padding-top: 0;
   width: 100%;
@@ -252,6 +329,7 @@ footer {
 
 /* BREAKPOINT */
 @media only screen and (min-width: 600px) {
+
   /* Hero section */
   #hero {
     margin: 0 2rem;
@@ -307,6 +385,7 @@ footer {
   #showcase .project-2 {
     display: none;
   }
+
   #showcase .project-4 {
     display: none;
   }
@@ -340,10 +419,25 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
   }
+
+  header {
+    padding: 2em 1.5em;
+  }
+
+  #logo {
+    font-size: 2.5em;
+  }
+  nav {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
 }
 
 /* BREAKPOINT 2*/
 @media only screen and (min-width: 905px) {
+
   /* Hero section */
   #hero {
     margin: 0 1.5rem;
@@ -374,6 +468,7 @@ footer {
   #showcase .project-2 {
     display: inline-block;
   }
+
   #showcase .project-4 {
     display: inline-block;
   }
@@ -400,10 +495,25 @@ footer {
   .footer-links .footer-container {
     margin-right: 2rem;
   }
+
+  header {
+    padding: 2em 1.5em;
+  }
+
+  #logo {
+    font-size: 2em;
+  }
+  nav {
+    display: block;
+  }
+  #menu {
+    display: none;
+  }
 }
 
 /* BREAKPOINT 3*/
 @media only screen and (min-width: 1240px) {
+
   /* Hero section */
   #hero {
     margin: 0 4rem;
@@ -475,10 +585,19 @@ footer {
   .footer-links .footer-container {
     margin-right: 6rem;
   }
+
+  header {
+    padding: 2em 4em;
+  }
+
+  #logo {
+    font-size: 3.5em;
+  }
 }
 
 /* BREAKPOINT 4*/
 @media only screen and (min-width: 1440px) {
+
   /* Hero section */
   #hero {
     max-width: 1440px;
@@ -509,5 +628,9 @@ footer {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+  }
+
+  header {
+    padding: 2em 0em;
   }
 }
