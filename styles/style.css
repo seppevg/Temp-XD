@@ -194,6 +194,7 @@ h1 {
   align-items: center;
   justify-content: center;
   font-weight: 900;
+  color: var(--XDblack);
 }
 
 /* CTA section */
@@ -246,4 +247,148 @@ footer {
 
 .footer-links ul a {
   color: var(--XDblack);
+}
+
+/* BREAKPOINT */
+@media only screen and (min-width: 600px) {
+  /* Hero section */
+  #hero {
+    margin: 0 2rem;
+  }
+
+  h1 {
+    margin: 3rem 0;
+  }
+
+  /* Manifesto section  */
+  #manifesto {
+    padding: 4rem 2rem;
+    margin-top: 3rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+
+  .box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 0px;
+  }
+
+  /* Showcase section */
+  #showcase {
+    margin: 3rem 2rem;
+  }
+
+  #showcase .project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 0px;
+  }
+
+  #showcase .project {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1.5rem;
+  }
+
+  #showcase .project-2 {
+    display: none;
+  }
+  #showcase .project-4 {
+    display: none;
+  }
+
+  /* CTA section */
+  #cta {
+    margin: 3rem 2rem;
+  }
+
+  .button {
+    margin-top: 0.5rem;
+  }
+
+  /* footer */
+  footer {
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .footer-links .footer-container:first-child h3 {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+/* BREAKPOINT 2*/
+@media only screen and (min-width: 905px) {
+  /* Hero section */
+  #hero {
+    margin: 0 1.5rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  /* Manifesto section  */
+  #manifesto {
+    padding: 6rem 1.5rem;
+  }
+
+  /* Showcase section */
+  #showcase {
+    margin: 4rem 1.5rem;
+  }
+
+  #showcase .project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 24px;
+    grid-row-gap: 0px;
+  }
+
+  #showcase .project-2 {
+    display: inline-block;
+  }
+  #showcase .project-4 {
+    display: inline-block;
+  }
+
+  /* CTA section */
+  #cta {
+    margin: 4rem 1.5rem;
+  }
+
+  /* footer */
+  footer {
+    padding: 4rem 1.5rem;
+  }
+
+  .footer-links h3 {
+    margin: 0 0 0.5rem 0;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-links .footer-container {
+    margin-right: 2rem;
+  }
 }
