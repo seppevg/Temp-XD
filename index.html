@@ -6,10 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Digital Experience Design</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.svg" />
   </head>
   <body>
+    <header>
+      <a href="index.html" id="logo">
+          Digital Experience Design
+      </a>
+      <nav>
+          <ul>
+          <li><a href="manifesto.html">Manifesto</a></li>
+          <li><a href="index.html">Explore</a></li>
+          <li><a href="https://www.thomasmore.be/en/ba-xd" target="_blank" id="contact">Inschrijven</a></li>
+          </ul>
+      </nav>
+      <a href="#" id="menu">Menu</a>
+  </header>
     <section id="hero">
       <h1>We are digital experience design</h1>
       <div style="padding: 56.25% 0 0 0; position: relative">
@@ -44,25 +58,25 @@
       </div>
     </section>
     <section id="showcase">
-      <div class="project-container">
-        <a href="#" class="project project-square project-1">
+      <div class="project-container" data-aos="fade-up">
+        <a href="#" class="project project-square project-1" data-aos="fade-up">
           <div class="project-button">+</div>
         </a>
-        <a href="#" class="project project-square project-2">
+        <a href="#" class="project project-square project-2" data-aos="fade-up">
           <div class="project-button">+</div>
         </a>
-        <a href="#" class="project project-square project-3">
+        <a href="#" class="project project-square project-3" data-aos="fade-up">
           <div class="project-button">+</div>
         </a>
       </div>
       <div class="project-container">
-        <a href="#" class="project project-vertical project-4">
+        <a href="#" class="project project-vertical project-4" data-aos="fade-up">
           <div class="project-button">+</div>
         </a>
-        <a href="#" class="project project-vertical project-5">
+        <a href="#" class="project project-vertical project-5" data-aos="fade-up">
           <div class="project-button">+</div>
         </a>
-        <a href="#" class="project project-vertical project-6">
+        <a href="#" class="project project-vertical project-6" data-aos="fade-up">
           <video width="100%" autoplay muted>
             <source
               src="./assets/projects/small/poster-wes-anderson.webm"
@@ -78,10 +92,10 @@
         </a>
       </div>
       <div class="project-container">
-        <a href="#" class="project project-square project-7">
+        <a href="#" class="project project-square project-7" data-aos="fade-up">
           <div class="project-button">+</div>
         </a>
-        <a href="#" class="project project-square project-8">
+        <a href="#" class="project project-square project-8" data-aos="fade-up">
           <video width="100%" autoplay muted>
             <source
               src="./assets/projects/small/littlemissmaere.webm"
@@ -95,13 +109,13 @@
           </video>
           <div class="project-button">+</div>
         </a>
-        <a href="#" class="project project-square project-9">
+        <a href="#" class="project project-square project-9" data-aos="fade-up">
           <div class="project-button">+</div>
         </a>
-        <a href="#" class="project project-square project-10">
+        <a href="#" class="project project-square project-10" data-aos="fade-up">
           <div class="project-button">+</div>
         </a>
-        <a href="#" class="project project-square project-11">
+        <a href="#" class="project project-square project-11" data-aos="fade-up">
           <video width="100%" autoplay muted>
             <source
               src="./assets/projects/small/turbo-pizza-club.webm"
@@ -115,7 +129,7 @@
           </video>
           <div class="project-button">+</div>
         </a>
-        <a href="#" class="project project-square project-12">
+        <a href="#" class="project project-square project-12" data-aos="fade-up">
           <video width="100%" autoplay muted>
             <source
               src="./assets/projects/small/portfolio-astra.webm"
@@ -155,6 +169,7 @@
           target="_blank"
           rel="noopener noreferrer"
           class="button"
+          id="cta-button"
           >bekijk het volledige programma</a
         >
       </div>
@@ -240,5 +255,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
