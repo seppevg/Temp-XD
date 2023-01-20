@@ -33,6 +33,19 @@ document.getElementById("contact").addEventListener("mouseout", function () {
     document.getElementById("contact").style.color = "white";
 });
 
+document.getElementById("menu").addEventListener("click", function () {
+    if (document.getElementById("menu").innerHTML == "Menu") {
+        document.getElementById("menu").innerHTML = "Close";
+        document.getElementById("menu-overlay").style.display = "block";
+        document.body.style.overflow = "hidden";
+    }
+    else {
+        document.getElementById("menu").innerHTML = "Menu";
+        document.getElementById("menu-overlay").style.display = "none";
+        document.body.style.overflow = "auto";
+    }  
+});
+
 document.getElementById("cta-button").addEventListener("mouseover", function () {
     let colorChoice = color[Math.floor(Math.random() * color.length)];
     document.getElementById("cta-button").style.backgroundColor = colorChoice;
@@ -46,16 +59,5 @@ document.getElementById("cta-button").addEventListener("mouseout", function () {
     document.getElementById("cta-button").style.color = "white";
 });
 
-document.getElementById("menu").addEventListener("click", function () {
-    if (document.getElementById("menu").innerHTML == "Menu") {
-        document.getElementById("menu").innerHTML = "Close";
-        document.getElementById("menu-overlay").style.display = "block";
-        document.body.style.overflow = "hidden";
-    }
-    else {
-        document.getElementById("menu").innerHTML = "Menu";
-        document.getElementById("menu-overlay").style.display = "none";
-        document.body.style.overflow = "auto";
-    }  
-});
+
 
