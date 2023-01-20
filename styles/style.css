@@ -49,8 +49,66 @@ body {
   font-weight: 100;
 }
 
+#popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--XDblack);
+  z-index: 3;
+  overflow: hidden;
+  display: none;
+}
+
+#popup.show {
+  display: block;
+}
+
+#popup .button-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
+  background-color: var(--XDwhite);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: var(--XDblack);
+  cursor: pointer;
+}
+
+#popup .button-close div {
+  transform: rotate(45deg);
+}
+
+#popup .button-arrow {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1.5rem;
+  background-color: var(--XDwhite);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: var(--XDblack);
+}
+
+#popup .button-arrow-left {
+  right: calc(1.5rem + 38px);
+  transform: rotate(180deg);
+}
+
+#popup .button-arrow img {
+  max-width: 8px;
+}
+
 header {
-  background-color: #0F0F0F;
+  background-color: #0f0f0f;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -148,7 +206,6 @@ h1 {
   text-transform: uppercase;
   color: var(--XDwhite);
 }
-
 
 /* Manifesto section  */
 #manifesto {
@@ -354,7 +411,6 @@ footer {
 
 /* BREAKPOINT */
 @media only screen and (min-width: 600px) {
-
   /* Hero section */
   #hero {
     margin: 0 2rem;
@@ -462,7 +518,6 @@ footer {
 
 /* BREAKPOINT 2*/
 @media only screen and (min-width: 905px) {
-
   /* Hero section */
   #hero {
     margin: 0 1.5rem;
@@ -538,7 +593,6 @@ footer {
 
 /* BREAKPOINT 3*/
 @media only screen and (min-width: 1240px) {
-
   /* Hero section */
   #hero {
     margin: 0 4rem;
@@ -623,7 +677,6 @@ footer {
 
 /* BREAKPOINT 4*/
 @media only screen and (min-width: 1440px) {
-
   /* Hero section */
   #hero {
     max-width: 1440px;
