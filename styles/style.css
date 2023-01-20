@@ -1,23 +1,23 @@
 @font-face {
   font-family: Bogam;
-  src: url("../fonts/Bogam.ttf");
+  src: url("../assets/fonts/Bogam.ttf");
 }
 
 @font-face {
   font-family: PP Neue Montreal;
-  src: url("../fonts/NeueMontreal-Bold.ttf");
+  src: url("../assets/fonts/NeueMontreal-Bold.otf");
   font-weight: 900;
 }
 
 @font-face {
   font-family: PP Neue Montreal;
-  src: url("../fonts/NeueMontreal-Medium.ttf");
+  src: url("../assets/fonts/NeueMontreal-Medium.otf");
   font-weight: 500;
 }
 
 @font-face {
   font-family: PP Neue Montreal;
-  src: url("../fonts/NeueMontreal-Regular.ttf");
+  src: url("../assets/fonts/NeueMontreal-Regular.otf");
   font-weight: 100;
 }
 
@@ -37,10 +37,13 @@
 
 * {
   box-sizing: border-box;
+  letter-spacing: normal;
 }
 
 body {
   background-color: var(--XDblack);
+  font-family: "PP Neue Montreal", sans-serif;
+  font-weight: 100;
 }
 
 /* Hero section */
@@ -59,6 +62,166 @@ h1 {
 #manifesto {
   background-color: var(--XDblue);
   color: var(--XDwhite);
-  font-family: "PP Neue Montreal", sans-serif;
   font-size: 1rem;
+  padding: 4rem 1rem;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.container p {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+}
+
+#manifesto .container a {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--XDwhite);
+  text-decoration: none;
+}
+
+.link-icon {
+  margin-left: 1rem;
+}
+
+.underline {
+  position: relative;
+  width: fit-content;
+}
+
+.underline:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: var(--XDwhite);
+}
+
+/* Showcase section */
+#showcase {
+  margin: 3rem 1rem;
+}
+
+#showcase .project {
+  display: flex;
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  position: relative;
+  margin-bottom: 1rem;
+  background-size: cover;
+  background-position: center center;
+}
+
+.project-1 {
+  background-image: url(../assets/projects/small/poster-sweet16.webp);
+}
+
+.project-2 {
+  background-image: url(../assets/projects/small/kwetter.webp);
+}
+.project-3 {
+  background-image: url(../assets/projects/small/buurtparlement-magazine.webp);
+}
+.project-4 {
+  background-image: url(../assets/projects/small/poster-wier.webp);
+}
+.project-5 {
+  background-image: url(../assets/projects/small/poster-her.webp);
+}
+.project-6 {
+  background-image: url(../assets/projects/small/poster-wes-anderson.webm);
+}
+.project-7 {
+  background-image: url(../assets/projects/small/troubadour.webp);
+}
+.project-8 {
+  background-image: url(../assets/projects/small/littlemissmaere.webm);
+}
+.project-9 {
+  background-image: url(../assets/projects/small/buurtparlement-logo.webp);
+}
+.project-10 {
+  background-image: url(../assets/projects/small/localleaves.webm);
+}
+.project-11 {
+  background-image: url(../assets/projects/small/turbo-pizza-club.webm);
+}
+.project-12 {
+  background-image: url(../assets/projects/small/portfolio-astra.webm);
+}
+
+#showcase .project .project-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--XDwhite);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+}
+
+/* CTA section */
+#cta {
+  margin: 3rem 1rem;
+  color: var(--XDwhite);
+}
+
+.button {
+  color: var(--XDwhite);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--XDwhite);
+  border-radius: 5rem;
+  width: fit-content;
+}
+
+footer {
+  background-color: var(--XDgreen);
+  padding: 3rem 1rem;
+}
+
+.footer-socials {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.footer-socials img:nth-child(-n + 3) {
+  margin-right: 1.5rem;
+}
+
+.footer-links h3 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul p {
+  margin: 0;
 }
