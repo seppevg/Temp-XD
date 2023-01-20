@@ -122,11 +122,18 @@ h1 {
 #showcase .project {
   display: flex;
   width: 100%;
-  padding-top: 100%; /* 1:1 Aspect Ratio */
   position: relative;
   margin-bottom: 1rem;
   background-size: cover;
   background-position: center center;
+}
+
+.project-square {
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+}
+
+.project-vertical {
+  padding-top: 141.4%; /* 16:9 Aspect Ratio (divide 16 by 9 = 1,777...) */
 }
 
 .project-1 {
@@ -146,26 +153,34 @@ h1 {
   background-image: url(../assets/projects/small/poster-her.webp);
 }
 .project-6 {
+  padding-top: 0;
   width: 100%;
   height: fit-content;
 }
+
 .project-7 {
   background-image: url(../assets/projects/small/troubadour.webp);
 }
 .project-8 {
-  background-image: url(../assets/projects/small/littlemissmaere.webm);
+  padding-top: 0;
+  width: 100%;
+  height: fit-content;
 }
 .project-9 {
   background-image: url(../assets/projects/small/buurtparlement-logo.webp);
 }
 .project-10 {
-  background-image: url(../assets/projects/small/localleaves.webm);
+  background-image: url(../assets/projects/small/localleaves.webp);
 }
 .project-11 {
-  background-image: url(../assets/projects/small/turbo-pizza-club.webm);
+  padding-top: 0;
+  width: 100%;
+  height: fit-content;
 }
 .project-12 {
-  background-image: url(../assets/projects/small/portfolio-astra.webm);
+  padding-top: 0;
+  width: 100%;
+  height: fit-content;
 }
 
 #showcase .project-button {
