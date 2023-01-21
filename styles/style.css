@@ -142,7 +142,7 @@ nav {
 }
 #menu-overlay nav {
   display: block;
-  height: 100%;
+  height: 80%;
 }
 #menu-overlay nav ul {
   display: flex;
