@@ -152,6 +152,10 @@ nav {
   height: 90%;
   padding: 0;
 }
+#menu-overlay nav ul li {
+  margin: 0;
+}
+
 
 #logo {
   font-family: "pp neue montreal", sans-serif;
