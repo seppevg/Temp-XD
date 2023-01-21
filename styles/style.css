@@ -48,63 +48,70 @@ body {
   font-family: "PP Neue Montreal", sans-serif;
   font-weight: 100;
 }
-
-#popup {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: var(--XDblack);
-  z-index: 3;
-  overflow: hidden;
+.modal {
   display: none;
+  position: fixed; 
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: hidden;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
 }
 
-#popup.show {
+.modal-content {
+  margin: auto;
   display: block;
+  max-height: 80%;
 }
 
-#popup .button-close {
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
   position: absolute;
-  top: 0.5rem;
-  right: 1.5rem;
-  background-color: var(--XDwhite);
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  color: var(--XDblack);
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
   cursor: pointer;
-}
-
-#popup .button-close div {
-  transform: rotate(45deg);
-}
-
-#popup .button-arrow {
-  position: absolute;
-  bottom: 0.5rem;
-  right: 1.5rem;
-  background-color: var(--XDwhite);
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  color: var(--XDblack);
-}
-
-#popup .button-arrow-left {
-  right: calc(1.5rem + 38px);
-  transform: rotate(180deg);
-}
-
-#popup .button-arrow img {
-  max-width: 8px;
 }
 
 header {
